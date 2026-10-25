@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://7ey176p86ma3"]
+
+[ext_resource type="Texture2D" uid="uid://bv31y33nsv860" path="res://assets/dude/one.png" id="1_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://cknx2kov6t81c" path="res://assets/dude/two.png" id="2_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://yysqen7i012i" path="res://assets/dude/three.png" id="3_tefeu"]
+[ext_resource type="Texture2D" uid="uid://ckqwwtfjbmagl" path="res://assets/dude/four.png" id="4_o6xl0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_smhyf"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("1_jyhfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tbgi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tefeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o6xl0")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.5
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1561991571]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1942599532]
+position = Vector2(283.99997, 285)
+scale = Vector2(0.36, 0.36)
+sprite_frames = SubResource("SpriteFrames_smhyf")
+autoplay = "default"
+frame_progress = 0.10651907
