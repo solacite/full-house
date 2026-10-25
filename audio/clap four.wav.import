@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bqcl00yxhbqie"
+path="res://.godot/imported/clap four.wav-183b3c173bd0ca9e8b5b5d39b84fcf16.sample"
+
+[deps]
+
+source_file="res://audio/clap four.wav"
+dest_files=["res://.godot/imported/clap four.wav-183b3c173bd0ca9e8b5b5d39b84fcf16.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

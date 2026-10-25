@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://yysqen7i012i" path="res://assets/dude/three.png" id="3_tefeu"]
 [ext_resource type="Texture2D" uid="uid://ckqwwtfjbmagl" path="res://assets/dude/four.png" id="4_o6xl0"]
 [ext_resource type="AudioStream" uid="uid://4fskdsm2tei6" path="res://audio/kick.wav" id="6_tefeu"]
+[ext_resource type="AudioStream" uid="uid://nd48o48vyvij" path="res://audio/clap.wav" id="8_tipki"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_smhyf"]
 animations = [{
@@ -27,6 +28,23 @@ animations = [{
 "speed": 13.0
 }, {
 "frames": [{
+"duration": 2.0,
+"texture": ExtResource("1_jyhfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_tbgi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tefeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o6xl0")
+}],
+"loop": 1,
+"name": &"bounce four",
+"speed": 10.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_jyhfs")
 }],
@@ -38,12 +56,30 @@ animations = [{
 [node name="Main" type="Node2D" unique_id=1561991571]
 script = ExtResource("1_tbgi4")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1015806473]
+visible = false
+offset_right = 1163.0
+offset_bottom = 659.0
+mouse_filter = 2
+color = Color(0.2946406, 0.29464063, 0.2946406, 1)
+
 [node name="dude" type="AnimatedSprite2D" parent="." unique_id=1942599532]
 position = Vector2(283.99997, 285)
 scale = Vector2(0.36, 0.36)
 sprite_frames = SubResource("SpriteFrames_smhyf")
-animation = &"bounce"
+animation = &"bounce four"
 autoplay = "idle"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=562846484]
+[node name="Area2D" type="Area2D" parent="dude" unique_id=1038586248]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dude/Area2D" unique_id=1247388874]
+position = Vector2(0, -2.777771)
+polygon = PackedVector2Array(197.22229, 213.88892, 158.33344, 258.3333, 141.66675, 350.00006, 402.7779, 658.33344, 475.00006, 1013.889, -280.5555, 1016.6667, -316.6666, 658.33344, -63.888794, 380.5556, -66.666626, 291.6667, -172.22217, 244.44452, -211.11102, 133.33337, -269.4444, 133.33337, -327.7777, 88.888916, -319.4444, 22.222229, -299.99994, -11.111084, -386.11105, -8.333313, -386.11105, -86.111084, -338.88882, -197.22223, -397.22217, -216.66669, -258.33325, -308.33334, -166.66663, -436.1111, -94.4444, -430.55557, -72.22217, -391.66666, -22.222168, -483.33334, 136.1112, -416.6667, 275.00006, -377.77777, 325.00006, -322.22223, 419.44452, -222.22223, 430.5556, -150, 352.7779, -166.66669, 425.00006, -61.111084, 388.88898, 41.666687, 341.6668, 69.44446, 313.88898, 119.44446, 261.11115, 127.77777)
+
+[node name="dude kick" type="AudioStreamPlayer2D" parent="." unique_id=562846484]
 stream = ExtResource("6_tefeu")
+
+[node name="dude clap" type="AudioStreamPlayer2D" parent="." unique_id=1162253253]
+stream = ExtResource("8_tipki")
+
+[connection signal="input_event" from="dude/Area2D" to="." method="_on_area_2d_input_event"]

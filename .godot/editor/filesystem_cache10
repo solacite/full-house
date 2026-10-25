@@ -1,5 +1,5 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792908301
+::res://::1792908429
 ::res://addons/::1792907428
 ::res://addons/godot_super-wakatime/::1792907450
 api_key_prompt.tscn::PackedScene::3919262858641749045::1792907449::0::1::::<><><>0<>0<><>::
@@ -13,7 +13,12 @@ four.png::CompressedTexture2D::5509135915216654119::1792907079::1792907080::1:::
 one.png::CompressedTexture2D::3919811992595007267::1792907079::1792907080::1::::<><><>0<>0<>be1b7b3819fb0d29985f3c83fa8db963<>res://.godot/imported/one.png-f9d4f8cecf194f270debe509c0526080.ctex::
 three.png::CompressedTexture2D::1735199023623982350::1792907079::1792907080::1::::<><><>0<>0<>99dd18ef8c4959dc8f42b0ce22715e08<>res://.godot/imported/three.png-b2ac4ac5f839af381b0c588abfb01264.ctex::
 two.png::CompressedTexture2D::5503011969695483298::1792907079::1792907080::1::::<><><>0<>0<>408eba39a87fb3f6c66899d8d45a7e2c<>res://.godot/imported/two.png-c7a9999d7daa9ca101bf4b0b7a1802b2.ctex::
-::res://audio/::1792908309
+::res://audio/::1792938917
+clap four.wav::AudioStreamWAV::3514284820391279020::1792938917::1792938917::1::::<><><>0<>0<>17d64c8294e2ba304985a6087793c06a<>res://.godot/imported/clap four.wav-183b3c173bd0ca9e8b5b5d39b84fcf16.sample::
+clap.wav::AudioStreamWAV::920468606200319325::1792938914::1792938915::1::::<><><>0<>0<>d93d2b488d428e2eab057b1d22f4ccf6<>res://.godot/imported/clap.wav-13427ffc31d073194be866e0b69eb241.sample::
+kick four.wav::AudioStreamWAV::8360519366894747582::1792909694::1792916625::1::::<><><>0<>0<>0f9af169f28c5d20d032b3bad95a1bcd<>res://.godot/imported/kick four.wav-21d780a5953b60e59d2e843a09a02598.sample::
 kick.wav::AudioStreamWAV::2046909304040671111::1792908309::1792908310::1::::<><><>0<>0<>b334ddfea066539395ef50d671373b57<>res://.godot/imported/kick.wav-c45ed3666cfea1e8dd64225241020843.sample::
-::res://scenes/::1792908155
-main.tscn::PackedScene::2255805875264202100::1792908155::0::1::::<><><>0<>0<><>::uid://bv31y33nsv860::::res://assets/dude/one.png<>uid://cknx2kov6t81c::::res://assets/dude/two.png<>uid://yysqen7i012i::::res://assets/dude/three.png<>uid://ckqwwtfjbmagl::::res://assets/dude/four.png
+::res://scenes/::1792938856
+main.tscn::PackedScene::2255805875264202100::1792938856::0::1::::<><><>0<>0<><>::uid://bv31y33nsv860::::res://assets/dude/one.png<>uid://c42plyok5wvo6::::res://scripts/main.gd<>uid://cknx2kov6t81c::::res://assets/dude/two.png<>uid://drd5sds2ws88i::::res://audio/kick four.wav<>uid://yysqen7i012i::::res://assets/dude/three.png<>uid://ckqwwtfjbmagl::::res://assets/dude/four.png<>uid://4fskdsm2tei6::::res://audio/kick.wav
+::res://scripts/::1792918505
+main.gd::GDScript::6864987713556205087::1792918505::0::1::::<>Node2D<><>0<>0<><>::
